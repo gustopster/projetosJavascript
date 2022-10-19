@@ -1,0 +1,64 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+    <title>App Gorjeta | + Temporizador</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="text-dark">
+    <div>
+        <div class="container">
+            <h1 class="display-3 mx-auto">App Gorjeta</h1>
+            <p>App Gorjeta conta com 3 Funções, uma te possibilita escolher quantos segundos a informação ficará
+                disponível na tela, a outra possibilita escolher a porcentagem da sua gorjeta e por fim a ultima te
+                possibilita a colocar o valor do Jantar/Almoço. Confira:</p>
+            <form>
+                <div class="mb-2 my-2">
+                    <label class="text-dark">Valor do Jantar:</label>
+                    <input type="number" id="jantar" class="form-control my-1" name="jantar"
+                        placeholder="Digite aqui o Valor do Jantar ou Almoço | Exemplo: 199,99">
+                </div>
+                <div class="mb-2 my-2">
+                    <label class="text-dark">Temporizador:</label>
+                    <input type="number" id="temporizador" class="form-control my-1" name="temporizador"
+                        placeholder="DICA!! Digite '30' para obter 30 segundos antes da página reiniciar">
+                </div>
+                <div class="input-group mb-1">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text text-light bg-dark">Quer nos dar uma Gorjeta?</label>
+                    </div>
+                    <select class="custom-select text-dark" name="select" id="garcon">
+                        <option>0% Não</option>
+                        <option>3% Razoável</option>
+                        <option>7% Bom</option>
+                        <option>10% Excelente</option>
+                    </select>
+                </div>
+                <button id="limpar" class="btn btn-success my-1 btn-lg" onclick="fechamento()"
+                    type="button">Consultar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="appGorAndTempo.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+</html>
